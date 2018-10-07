@@ -1,18 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-Below you will find some information on how to perform common tasks.
+This project is a starting point for a technical challange to build a React To Do application.
 
-You can find the full version of this guide [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
+The project consists of two parts:
 
-## Table of Contents
+**Server** - A very basic REST API that provides various endpoints for managing todos.
 
-- [Folder Structure](#folder-structure)
-- [Available Scripts](#available-scripts)
-  - [npm start](#npm-start)
-  - [npm test](#npm-test)
-  - [npm run build](#npm-run-build)
-  - [npm run eject](#npm-run-eject)
+**Front-End** - In the intial state of the repository this is bootstrapped with [p](https://github.com/facebook/create-react-app) default tooling but does not yet contain any business logic relating to the To Do app.
 
+## About the Technical Challenge
+
+As a Front-End developer at Ordoo you'll work extensivly with our internal API. This test has been devised to evaluate a broad range of skills and to understand how the participant would approach a greenfield project.
+
+The API is a simple To Do REST API and has endpoints for:
+
+| Type | Description | Method | Route |
+| ---- | ----------- | ------ | ----- |
+| Index | List all To Dos | GET | `/` |
+| Show | List a single To Do | GET | `/:id` |
+| Create | Create a To Do | POST | `/` |
+| Update | Update a To Do | PUT | `/:id` |
+| Destroy | Delete a To Do | DELETE | `/:id` |
+
+Your task is provide an Front End for the application that exhibits the sort of behaviours you'd expect to find in such an app. In the interest of time there aren't any expectations for this to be a 'complete' app as the submission but rather just enough to be able to review the partial implementation and discuss the approach.
+
+The challenge will consist of:
+
+1. A quick call to discuss the challenge and any questions.
+2. Working on the challenge independently and chatting on Slack / Hangouts as appropriate. Time can be scheduled in to pair if needed.
+3. A final call to review things.
+
+Lastly, a couple of things to note:
+
+- All code changes should be put into branch(es) containing your name.
+- A [Postman](https://www.getpostman.com/) collection demonstrating the API endpoints has been included [here](/https://github.com/ordoo/ordoo-todo/blob/master/postman.json). This can be imported to show you how the API is structured and for testing.
+- This codebase has been setup to speed thing up and help by providing an environment with some common tooling in mind. If you have preferences over using another setup feel free to change things as much as you see fit.
+- If this seems all a bit too much, please do not hesitate to let me know and I'll try and approach things differently.
+
+## Prerequisites
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can find the full Create React App guide [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+For the sake of simplicity the server does not persist changes to a database and will reset on load. Futhermore the server does not implement any authentication.
 
 ## Folder Structure
 
@@ -77,3 +106,7 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
+
+### `npm run server`
+
+Starts the server with the API on port 3000.
