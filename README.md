@@ -6,7 +6,7 @@ The project consists of two parts:
 
 **Server** - A very basic REST API that provides various endpoints for managing todos.
 
-**Front-End** - In the intial state of the repository this is bootstrapped with [p](https://github.com/facebook/create-react-app) default tooling but does not yet contain any business logic relating to the To Do app.
+**Front-End** - In the intial state of the repository this is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) default tooling but does not yet contain any business logic relating to the To Do app.
 
 ## About the Technical Challenge
 
