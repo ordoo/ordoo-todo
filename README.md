@@ -33,7 +33,7 @@ The challenge will consist of:
 Lastly, a couple of things to note:
 
 - All code changes should be put into branch(es) containing your name.
-- A [Postman](https://www.getpostman.com/) collection demonstrating the API endpoints has been included [here](/https://github.com/ordoo/ordoo-todo/blob/master/postman.json). This can be imported to show you how the API is structured and for testing.
+- A [Postman](https://www.getpostman.com/) collection demonstrating the API endpoints has been included [here](https://github.com/ordoo/ordoo-todo/blob/master/postman.json). This can be imported to show you how the API is structured and for testing.
 - This codebase has been setup to speed thing up and help by providing an environment with some common tooling in mind. If you have preferences over using another setup feel free to change things as much as you see fit.
 - If this seems all a bit too much, please do not hesitate to let me know and I'll try and approach things differently.
 
