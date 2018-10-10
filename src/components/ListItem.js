@@ -5,7 +5,7 @@ class ListItem extends Component {
   render() {
     return (
       <li className="ListItem">
-        <p>Placeholder for title</p>
+        <p>{ this.props.item.title }</p>
       </li>
     );
   }
