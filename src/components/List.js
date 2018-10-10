@@ -12,6 +12,21 @@ class List extends Component {
         { id: 3, title: 'Item 3' },
       ]
     }
+
+    this.loadToDoItems()
+  }
+
+  loadToDoItems() {
+    fetch('//127.0.0.1:3001')
+    .then((response) => response.json())
+    .then((payload) => {
+      this.setState({
+        listItems: payload,
+      })
+    })
+    .catch((e) => {
+      console.error('Could not fetch list items', e)
+    })
   }
 
   renderListItems() {

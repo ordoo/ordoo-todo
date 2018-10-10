@@ -1,9 +1,11 @@
 let _ = require('lodash')
 let express = require('express')
 let bodyParser = require('body-parser')
+let cors = require('cors')
 
 let app = express()
 app.use(bodyParser.json())
+app.use(cors())
 
 let port = 3001
 
