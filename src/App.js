@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { find, indexOf } from 'lodash';
 import List from './components/List';
 import Form from './components/Form';
 import './App.css';
@@ -32,13 +33,19 @@ class App extends Component {
     })
   }
 
+  onRemove(id) {
+    this.setState({
+      listItems: this.state.listItems.filter(listItem => listItem.id !== id)
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1>Ordoo To Do!</h1>
           <Form onCreate={ this.onCreate.bind(this) }></Form>
-          <List listItems={ this.state.listItems }></List>
+          <List onRemove={ this.onRemove.bind(this) } listItems={ this.state.listItems }></List>
         </header>
       </div>
     );

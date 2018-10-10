@@ -6,7 +6,7 @@ class List extends Component {
   renderListItems() {
     return this.props.listItems.map((listItem) => {
       return (
-        <ListItem item={ listItem }></ListItem>
+        <ListItem onRemove={ this.props.onRemove } item={ listItem }></ListItem>
       )
     })
   }
